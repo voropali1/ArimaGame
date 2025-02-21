@@ -25,7 +25,6 @@ Arima is a strategy board game similar to chess. This project implements the gam
 ![1](images/30.png)
 
 ![2](images/31.png)
-
 ## 📌 Project Status 
 
 This project is currently **under development**. 
