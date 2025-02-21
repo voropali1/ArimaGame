@@ -40,6 +40,7 @@ public class SquarePanel {
     public String[] spieces = {"rabbits", "rabbits", "rabbits", "rabbits", "rabbits", "rabbits", "rabbits", "rabbits", "cats", "cats", "dogs", "dogs", "horses", "horses", "elephants", "camels"};
     public GridPane gridPane = new GridPane();
     TextArea textArea = new TextArea();
+
     String player;
     ImageView imageViewToRemove;
     int rabbitcount = 0;
@@ -87,6 +88,14 @@ public class SquarePanel {
             System.out.println("Logging is disabled");
             log.setLevel(Level.OFF);
         }
+        textArea.setStyle(
+            "-fx-font-size: 30px;" +                // Font size
+            "-fx-text-fill: black;" +               // Text color
+            "-fx-background-color: #f4f4f4;" +      // Background color
+            "-fx-border-color: #dcdcdc;" +          // Border color
+            "-fx-border-radius: 5px;" +             // Rounded border
+            "-fx-text-alignment: center;"           // Center text horizontally
+        );
         log.info("creating a screen");
         BorderPane root = new BorderPane();
         gridPane.setHgap(1);
@@ -376,6 +385,20 @@ public class SquarePanel {
                 }
             }
         });
+        startButton.setStyle(
+        "-fx-background-color: #4CAF50;" +  // Green background
+        "-fx-text-fill: white;" +             // White text color
+        "-fx-font-size: 16px;" +              // Font size
+        "-fx-padding: 10px 20px;"             // Padding for the button
+    );
+        textArea.setStyle(
+            "-fx-font-size: 30px;" +                // Font size
+            "-fx-text-fill: black;" +               // Text color
+            "-fx-background-color: #f4f4f4;" +      // Background color
+            "-fx-border-color: #dcdcdc;" +          // Border color
+            "-fx-border-radius: 5px;" +             // Rounded border
+            "-fx-text-alignment: center;"           // Center text horizontally
+        );
         return startButton;
     }
 
