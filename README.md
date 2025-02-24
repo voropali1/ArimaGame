@@ -12,7 +12,7 @@ Arima is a strategy board game similar to chess. This project implements the gam
 - **Player vs Player**: Play locally with another user on the same computer.
 
 ## 📌 Technologies Used 
-
+ 
 - **JavaFX**: For building the graphical user interface (GUI).
 - **Maven**: Project management tool for dependency management and building the application.
 - **JUnit**: For testing and ensuring the correctness of game logic.
